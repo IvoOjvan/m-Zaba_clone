@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Login_button">PRIJAVA</string>
+    <string name="tvToken_text">M-TOKEN</string>
+    <string name="tvPayment_text">IZIPAY</string>
+    <string name="tvContact_text">KONTAKTI</string>
+    <string name="tvLocations_text">LOKACIJE</string>
+    <string name="tvCurrency_text">TEČAJNA LISTA</string>
+    <string name="tvAmount_text">IZNOS</string>
+    <string name="tvCurr_text">VALUTA</string>
+    <string name="tvSelection_text">ODABERI VALUTU</string>
+    <string name="btnCalculate_text">PRETVORI</string>
+    <string name="bankLocations">LOKACIJE</string>
+    <string name="contacts">KONTAKTI</string>
+    <string name="info_telefon">INFO TELEFON</string>
+    <string name="info_telefon_number">0800 0024</string>
+    <string name="calls">POZIVI IZ INOZEMSTVA</string>
+    <string name="calls_number">+385 3773 333</string>
+    <string name="info">INFORMACIJE I UPITI</string>
+    <string name="info_mail">ZABA@UNICREDITGROUP.ZABA.HR</string>
+    <string name="support">M-ZABA PODRŠKA</string>
+    <string name="support_mail">M-ZABA@UNICREDITGROUP.ZABA.HR</string>
+    <string name="working_hours">RADNO VRIJEME</string>
+    <string name="wrk_hrs_week">PON - PET 8:00 - 21:00</string>
+    <string name="wrk_hrs_weekend">SUB 8:00 - 14:00</string>
+    <string name="payment">IZIPAY</string>
+    <string name="choice">Odaberite račun</string>
+    <string name="target">IME I PREZIME PRIMATELJA</string>
+    <string name="reason">RAZLOG</string>
+    <string name="serial_number">Serijski broj: </string>
+    <string name="token">Token: </string>
+    <string name="mtoken">M-TOKENI</string>
+    <string name="loginX">X</string>
+    <string name="loginOK">OK</string>
+    <string name="zaba">m-zaba</string>
+    <string name="slogan">Banka na dlanu!</string>
+    <string name="pin">UNESITE PIN</string>
+    <string name="login">Prijava</string>
+    <string name="token_gen">GENERIRAJ</string>
+    <string name="accounts">RAČUNI</string>
+</resources>
