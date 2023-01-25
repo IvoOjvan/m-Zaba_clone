@@ -52,32 +52,40 @@ class TokenFragment : Fragment() {
             val token : String = tokenSelector.text.toString()
 
             if(token == tokens[0]){
-                val randomValue = List(10){ Random.nextInt(0,9)}
                 tvSerialNumber.text = "Serijski broj: "
-                tvSerialNumber.append(randomValue.joinToString(""))
+                tvSerialNumber.append(generateSerialNumber())
 
                 tvGenerated.text = ""
-
-                for(i in 5 downTo 0 step 1){
-                    val randomIndex = Random.nextInt(0,9)
-                    tvGenerated.append(randomValue[randomIndex].toString())
-                }
+                tvGenerated.text = generateToken()
             }else if(token == tokens[1]){
-                val randomValue = List(10){ Random.nextInt(0,9)}
                 tvSerialNumber.text = "Serijski broj: "
-                tvSerialNumber.append(randomValue.joinToString(""))
+                tvSerialNumber.append(generateSerialNumber())
 
                 tvGenerated.text = ""
-
-                for(i in 5 downTo 0 step 1){
-                    val randomIndex = Random.nextInt(0,9)
-                    tvGenerated.append(randomValue[randomIndex].toString())
-                }
+                tvGenerated.text = generateToken()
             }
         }
 
         return view
     }
+
+    fun generateToken():String{
+        var token = StringBuilder()
+        val randomValue = List(10){ Random.nextInt(0,9)}
+        for(i in 5 downTo 0 step 1){
+            val randomIndex = Random.nextInt(0,9)
+            token.append(randomValue[randomIndex])
+        }
+        return token.toString()
+    }
+
+    fun generateSerialNumber() : String{
+        var token = StringBuilder()
+        val randomValue = List(10){ Random.nextInt(0,9)}
+        return randomValue.joinToString("")
+    }
+
+
 
 
 }

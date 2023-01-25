@@ -58,7 +58,6 @@ class AccountFragment : Fragment() {
                 val accountAdapter = ArrayAdapter(view.context, android.R.layout.simple_list_item_1, ibans)
                 accountsDropdown.setAdapter(accountAdapter)
 
-
                 tvAccountName.text = bankAccounts[0].name.toString()
                 tvIBAN.text = bankAccounts[0].iban.toString()
                 tvAmount.text = bankAccounts[0].amount + "HRK"
