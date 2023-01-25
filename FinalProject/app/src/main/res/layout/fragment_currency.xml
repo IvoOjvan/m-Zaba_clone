@@ -118,6 +118,7 @@
         android:id="@+id/currencyRecyclerView"
         android:layout_width="363dp"
         android:layout_height="391dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -75,8 +75,6 @@ class AccountFragment : Fragment() {
                     ) {
                         if(response.isSuccessful){
                             tvAmountEUR.text = response.body()?.new_amount.toString() + " EUR"
-                            Toast.makeText(context, "Size: " + response.body()?.new_amount.toString(), Toast.LENGTH_LONG).show()
-
                         }
                     }
                     override fun onFailure(call: Call<ConvertedCurrency>, t: Throwable) {

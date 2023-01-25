@@ -69,7 +69,6 @@ class LoginFragment : Fragment() {
                     fragmentTransaction?.replace(R.id.fragment_layout, AccountFragment())
                     fragmentTransaction?.commit()
                 }
-                Toast.makeText(context, "Radi PIN", Toast.LENGTH_LONG).show()
             }
         }
 

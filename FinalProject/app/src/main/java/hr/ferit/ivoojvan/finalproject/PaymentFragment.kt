@@ -88,12 +88,6 @@ class PaymentFragment : Fragment() {
                 }
             }
 
-            /*val calendar = Calendar.getInstance()
-            val currentDate = LocalDateTime.of(
-                calendar.get(Calendar.DAY_OF_MONTH),
-                calendar.get(Calendar.MONTH)
-            )*/
-
             val formatter = SimpleDateFormat("yyyy-MM-dd")
             val date = Date()
             val current = formatter.format(date)
@@ -112,6 +106,8 @@ class PaymentFragment : Fragment() {
                     acc.id
                 )
             )
+
+            Toast.makeText(context,"Plaćanje obavljeno!", Toast.LENGTH_LONG).show()
         }
 
 

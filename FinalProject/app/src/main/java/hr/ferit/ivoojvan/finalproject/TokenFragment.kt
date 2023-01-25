@@ -33,7 +33,7 @@ class TokenFragment : Fragment() {
 
         val tokenSelector = view.findViewById<AutoCompleteTextView>(R.id.autoCompleteTextViewToken)
 
-        val tokens = arrayOf("OTP (APPLI 1)", "MAC (APPLI 2)", "DFE (APPLI 4)")
+        val tokens = arrayOf("OTP (APPLI 1)", "MAC (APPLI 2)")
         val adapter = ArrayAdapter(view.context, android.R.layout.simple_list_item_1, tokens)
         tokenSelector.setAdapter(adapter)
 
@@ -62,9 +62,18 @@ class TokenFragment : Fragment() {
                     val randomIndex = Random.nextInt(0,9)
                     tvGenerated.append(randomValue[randomIndex].toString())
                 }
+            }else if(token == tokens[1]){
+                val randomValue = List(10){ Random.nextInt(0,9)}
+                tvSerialNumber.text = "Serijski broj: "
+                tvSerialNumber.append(randomValue.joinToString(""))
 
+                tvGenerated.text = ""
+
+                for(i in 5 downTo 0 step 1){
+                    val randomIndex = Random.nextInt(0,9)
+                    tvGenerated.append(randomValue[randomIndex].toString())
+                }
             }
-
         }
 
         return view

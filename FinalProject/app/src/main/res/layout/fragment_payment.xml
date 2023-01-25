@@ -29,7 +29,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.041" />
@@ -67,7 +67,7 @@
         android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.215" />
@@ -143,7 +143,7 @@
         android:id="@+id/autoCompleteTextViewReason"
         android:layout_width="193dp"
         android:layout_height="47dp"
-        android:hint="Zbog sira"
+        android:hint="Odaberite razlog"
         android:focusable="false"
         android:backgroundTint="@color/login_button_color"
         app:layout_constraintBottom_toBottomOf="parent"
